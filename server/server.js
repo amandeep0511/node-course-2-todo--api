@@ -16,7 +16,9 @@ app.post('/todos',(req,res)=>{
   },(e)=>{
     res.status(400).send('Bad request');
   })
-})
+});
 app.listen(3000,()=>{
   console.log('Connected to 3000 port');
-})
+});
+
+module.exports = {app};
